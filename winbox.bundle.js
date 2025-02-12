@@ -7,7 +7,7 @@
 /**
  * Ty: Credit where credit is due, I'm not good enough to come up with WinBox, but I bend it to my will and make it easier to read. Smarter, not harder.
  */
-(// Import necessary modules or libraries
+// Import necessary modules or libraries
 import WinBox from 'winbox';
 
 // Existing code
@@ -32,37 +32,37 @@ import WinBox from 'winbox';
             touch-action: none;
         }
         .wb-header {
-            top: 0;
-            width: 100%;
-            height: 45px !important; /* Custom header height */
-            line-height: 45px !important; /* Custom header line-height */
-            background: #333 !important; /* Custom header background color */
-            color: #fff !important; /* Custom header text color */
-            overflow: hidden;
-            z-index: 1;
-        }
-        .wb-title {
-            font-family: 'Courier New', Courier, monospace !important; /* Custom font */
-            font-size: 16px !important; /* Custom font size */
-            color: #ffcc00 !important; /* Custom title color */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .wb-body {
-            top: 45px !important; /* Adjusted for custom header height */
-            right: 0;
-            bottom: 0;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-            overflow-scrolling: touch;
-            will-change: contents;
-            background: #fff !important;
-            margin-top: 0 !important;
-            contain: strict;
-            z-index: 0;
-        }
-        /* Add more custom styles as needed */
-    `;
+                    top: 0;
+                    width: 100%;
+                    height: 45px; /* Custom header height */
+                    line-height: 45px !important; /* Custom header line-height */
+                    background: #333 !important; /* Custom header background color */
+                    color: #fff !important; /* Custom header text color */
+                    overflow: hidden;
+                    z-index: 1;
+                }
+                .wb-title {
+                    font-family: 'Courier New', Courier, monospace !important; /* Custom font */
+                    font-size: 16px !important; /* Custom font size */
+                    color: #ffcc00 !important; /* Custom title color */
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .wb-body {
+                    top: 45px !important; /* Adjusted for custom header height */
+                    right: 0;
+                    bottom: 0;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    overflow-scrolling: touch;
+                    will-change: contents;
+                    background: #fff !important;
+                    margin-top: 0 !important;
+                    contain: strict;
+                    z-index: 0;
+                }
+                /* Add more custom styles as needed */
+        `;
     document.head.appendChild(ba);
 })();
