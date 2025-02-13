@@ -57,18 +57,9 @@ contact.addEventListener('click', () => {
     bottom: 50,
     left: 50,
     mount: contactContent,
-    // This is just me showing off button options
     buttons: [
       'min',
       'max',
-      'full',
-      'small',
-      'zoom',
-      'next',
-      'prev',
-      'index',
-      'reset',
-      'info',
       'download',
       'print',
       'close',
@@ -175,10 +166,6 @@ window.onload = function() {
       if (toRotate) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
       }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-};
+  },
+});
+
