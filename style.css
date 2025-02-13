@@ -32,3 +32,66 @@
     color: var(--text-color);
   }
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p {
+  margin: 20px 0;
+}
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 300px;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 800;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+}
